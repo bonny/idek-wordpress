@@ -1,0 +1,71 @@
+/*
+Theme Name:   IdeK
+Template:     twentyfifteen
+*/
+
+/* remove Proudly powered by WordPress and edit links*/
+#colophon,
+.entry-footer .edit-link {
+	visibility: hidden;
+}
+
+.entry-footer {
+	background: none;
+}
+
+.entry-footer:hover .edit-link {
+	visibility: visible;
+}
+
+/* always hide query monitor when no admin bar is in use */
+body:not(.admin-bar) #qm {
+	display: none !important;
+}
+
+.admin-bar #qm  {
+	position: relative;
+}
+
+.sidebar {
+	opacity: .5;
+	transition: all .25s ease-out;
+}
+
+.sidebar:hover {
+	opacity: 1;
+}
+
+body.begin-navigate .content-area {
+	opacity: 0;
+	transition: all .25s ease-out;
+}
+
+body.begin-navigate--next .content-area {
+	transform: translateX(-20px);
+}
+
+body.begin-navigate--prev .content-area {
+	transform: translateX(20px);
+}
+
+
+.entry-content a {
+	border-bottom-color: #ddd;
+}
+
+.entry-content:hover a {
+	border-bottom-color: inherit;
+}
+
+.entry-content a:hover {
+	border-bottom: 1px solid #333;
+}
+
+
+@media screen and (min-width: 87.6875em) {
+	body:before {
+		background: none;
+		box-shadow: none;
+	}
+}
+
