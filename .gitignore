@@ -12,3 +12,6 @@ wp/wp-content/upgrade/
 wp/wp-content/uploads/
 wp/wp-content/wp-cache-config.php
 wp/wp-content/db.php
+
+wp/wp-content/plugins/bwp-minify/cache/
+
